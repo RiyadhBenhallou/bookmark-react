@@ -15,7 +15,7 @@ export default function FeatureTab({
     <div className="relative">
       <div
         className={`container flex flex-col md:flex-row${
-          direction === "left" ? "-reverse" : ""
+          direction === "left" ? "" : "-reverse"
         } items-center justify-center gap-x-20 mt-16`}
       >
         <div className="flex flex-1 justify-center w-1/2">
@@ -33,13 +33,12 @@ export default function FeatureTab({
           </p>
           <CTAButtonPrimary text={buttonCta} />
         </div>
-        {/* <div className="hidden md:block absolute -bottom-12 -left-0 bg-bookmark-purple overflow-hidden rounded-r-full h-36 lg:h-60 w-2/4"></div> */}
       </div>
       <div
         className={`hidden md:block absolute -bottom-12 -${
-          direction === "left" ? "right" : "left"
+          direction === "left" ? "left" : "right"
         }-0 bg-bookmark-purple overflow-hidden rounded-${
-          direction === "left" ? "l" : "r"
+          direction === "left" ? "r" : "l"
         }-full h-36 lg:h-60 w-2/4`}
       ></div>
     </div>
