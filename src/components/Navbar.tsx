@@ -1,5 +1,5 @@
 import { Menu } from "lucide-react";
-import CTAButton from "./CTAButton";
+import NavButton from "./NavButton";
 
 export default function Navbar() {
   const links = ["features", "pricing", "contact"];
@@ -12,7 +12,7 @@ export default function Navbar() {
         {links.map((l) => (
           <li className="cursor-pointer">{l}</li>
         ))}
-        <CTAButton text="Login" />
+        <NavButton text="Login" />
       </ul>
       <div className="flex sm:hidden justify-end flex-1 cursor-pointer">
         <Menu className="" />
