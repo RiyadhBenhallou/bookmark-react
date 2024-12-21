@@ -1,4 +1,5 @@
 import Download from "./components/Download";
+import FAQ from "./components/FAQ";
 import Features from "./components/Features";
 import Hero from "./components/Hero";
 
@@ -14,6 +15,9 @@ function App() {
       </section>
       <section className="py-10 mt-10">
         <Download />
+      </section>
+      <section className="py-20 mt-10 bg-bookmark-white">
+        <FAQ />
       </section>
     </div>
   );
