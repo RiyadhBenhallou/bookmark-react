@@ -14,8 +14,8 @@ export default function FeatureTab({
   return (
     <div className="relative">
       <div
-        className={`container flex flex-col md:flex-row${
-          direction === "left" ? "" : "-reverse"
+        className={`container flex flex-col ${
+          direction === "left" ? "md:flex-row" : "md:flex-row-reverse"
         } items-center justify-center gap-x-20 mt-16`}
       >
         <div className="flex flex-1 justify-center w-1/2">
@@ -35,11 +35,11 @@ export default function FeatureTab({
         </div>
       </div>
       <div
-        className={`hidden md:block absolute -bottom-12 -${
-          direction === "left" ? "left" : "right"
-        }-0 bg-bookmark-purple overflow-hidden rounded-${
-          direction === "left" ? "r" : "l"
-        }-full h-36 lg:h-60 w-2/4`}
+        className={`hidden md:block absolute -bottom-12 ${
+          direction === "left" ? "left-0" : "right-0"
+        } bg-bookmark-purple overflow-hidden ${
+          direction === "left" ? "rounded-r-full" : "rounded-l-full"
+        } h-36 lg:h-60 w-2/4`}
       ></div>
     </div>
   );
