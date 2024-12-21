@@ -36,7 +36,7 @@ export default function FeatureTab({
       </div>
       <div
         className={`hidden md:block absolute -bottom-12 ${
-          direction === "left" ? "left-0" : "right-0"
+          direction === "left" ? "-left-36" : "-right-36"
         } bg-bookmark-purple overflow-hidden ${
           direction === "left" ? "rounded-r-full" : "rounded-l-full"
         } h-36 lg:h-60 w-2/4`}
