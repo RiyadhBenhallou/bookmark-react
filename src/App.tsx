@@ -2,6 +2,7 @@ import ContactUs from "./components/ContactUs";
 import Download from "./components/Download";
 import FAQ from "./components/FAQ";
 import Features from "./components/Features";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 
 function App() {
@@ -22,6 +23,9 @@ function App() {
       </section>
       <section className="py-20 mt-10 bg-bookmark-purple text-white">
         <ContactUs />
+      </section>
+      <section className="bg-bookmark-blue py-8">
+        <Footer />
       </section>
     </div>
   );
