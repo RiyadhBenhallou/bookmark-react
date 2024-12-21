@@ -1,3 +1,4 @@
+import ContactUs from "./components/ContactUs";
 import Download from "./components/Download";
 import FAQ from "./components/FAQ";
 import Features from "./components/Features";
@@ -18,6 +19,9 @@ function App() {
       </section>
       <section className="py-20 mt-10 bg-bookmark-white">
         <FAQ />
+      </section>
+      <section className="py-20 mt-10 bg-bookmark-purple text-white">
+        <ContactUs />
       </section>
     </div>
   );
